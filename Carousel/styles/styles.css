@@ -1,0 +1,77 @@
+main {
+    display: flex;
+    flex-direction: row;
+    xwidth: 100%;
+    xheight: 50rem;
+    background-color: aqua;
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+
+.left {
+
+    position: absolute;
+    left: 0px;
+
+}
+
+
+.leftone {
+
+    position: absolute;
+    left: -600px;
+}
+
+.lefttwo {
+
+    position: absolute;
+    left: -1200px;
+}
+
+/*buttons*/
+
+.back {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    background-color: orange;
+    position: absolute;
+    top: 50%;
+
+}
+
+.back:hover {
+    background-color: dodgerblue;
+}
+
+.next {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    background-color: orange;
+    position: absolute;
+    top: 50%;
+    left: 88%;
+}
+
+.next:hover {
+    background-color: dodgerblue;
+}
+
+/*images
+
+.beach {
+    position: absolute;
+    transition: all 1.0s ease-in-out;
+
+}
+
+.city {
+    left: -800px;
+    transition: all 1.0s ease-in-out;
+
+}
+*/
