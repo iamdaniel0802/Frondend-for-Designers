@@ -67,9 +67,6 @@ var filmtitle = function (jsonObj) {
         }
 
 
-
-
-
         //button//
         var infobutton = document.createElement("button");
         infobutton.innerHTML = 'Meer info';
