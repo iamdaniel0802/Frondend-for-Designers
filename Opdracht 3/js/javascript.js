@@ -1,4 +1,4 @@
-var requestURL = 'http://dennistel.nl/movies'
+var requestURL = 'https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json'
 var request = new XMLHttpRequest();
 var container = document.querySelector('div');
 //console.log(container);
@@ -67,19 +67,50 @@ var filmtitle = function (jsonObj) {
         }
 
 
-        //button//
-        var infobutton = document.createElement("button");
-        infobutton.innerHTML = 'Meer info';
-        blok.appendChild(infobutton);
+//button//
+ var infobutton = document.createElement("button");
+ if(infobutton.innerHTML === "Meer info"){
+     infobutton.innerHTML = "Close";
+ }else{
+     infobutton.innerHTML = "Meer info";
+ }
+ infobutton.classList.add("meerinfo")
+ blok.appendChild(infobutton);
 
 
-        infobutton.info = infoblok;
-        infobutton.addEventListener("click", function () {
-            this.info.classList.add('active');
+ infobutton.info = infoblok;
+ infobutton.addEventListener("click", function () {
+     this.info.classList.toggle('active');
 
-        });
+ });
 
-    }
+/* //button//
+ var infobutton = document.createElement("button");
+ infobutton.innerHTML = 'Meer info';
+ infobutton.classList.add("meerinfo")
+ blok.appendChild(infobutton);
+
+
+ infobutton.info = infoblok;
+ infobutton.addEventListener("click", function () {
+     this.info.classList.toggle('active');
+
+ });*/
+
+/*//button close//
+   var closebutton = document.createElement("button");
+   infobutton.innerHTML = 'Close';
+   infobutton.classList.add("meerinfo")
+   blok.appendChild(closebutton);
+
+
+   closebutton.info = infoblok;
+   closebutton.addEventListener("click", function () {
+       this.info.classList.toggle('nonactive');
+
+   });*/
+
+}
 }
 
 
