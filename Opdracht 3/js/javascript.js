@@ -67,7 +67,7 @@ var filmtitle = function (jsonObj) {
         }
 
 
-        //Ik heb nu twee buttons gemaakt met de zelfde functie dat werkt alleen wordt er wel super gefaked en is het niet een super mooie oplossing//
+        //Ik heb nu twee buttons gemaakt met de zelfde functie dat werkt alleen wordt er wel super gefaked//
 
         //button//
         var infobutton = document.createElement("button");

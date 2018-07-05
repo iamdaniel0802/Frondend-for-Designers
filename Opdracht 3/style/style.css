@@ -32,11 +32,18 @@ p {
     color: #086788;
 }
 
+.ptwo {
+    font-size: 1rem;
+    font-family: helvetica;
+    color: #ffffff;
+}
+
 img {
     display: block;
     width: 20rem;
     height: auto;
-
+    border-radius: 4px;
+    box-shadow: 0 0.2rem 0.2rem rgba(182, 182, 182, 0.75);
 }
 
 button {
@@ -71,7 +78,6 @@ button {
 .bloktwee {
     display: block;
     color: #ffffff;
-    background-color: white;
     width: 350px;
     height: auto;
     box-shadow: 0 0.2rem 0.2rem rgba(182, 182, 182, 0.75);
@@ -81,7 +87,9 @@ button {
     visibility: hidden;
     opacity: 0;
     transition: opactiy 1s;
-    background-color: lightgrey;
+    background: linear-gradient(to bottom, #0099ff 0%, #ccffff 100%);
+    ;
+
 
 
 }
