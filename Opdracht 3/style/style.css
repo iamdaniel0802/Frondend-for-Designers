@@ -19,7 +19,8 @@ h1 {
     text-align: left;
     font-family: helvetica;
 }
-h2{
+
+h2 {
     font-size: 1.5rem;
     text-align: left;
     font-family: helvetica;
@@ -39,21 +40,32 @@ img {
 }
 
 button {
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.meerinfo{
+.meerinfo {
     background-color: #086788;
     border-radius: 4px;
     font-family: helvetica;
     font-size: 1rem;
     color: #ffffff;
-    padding:0.5rem;
-    
+    padding: 0.5rem;
+    width: 6rem;
+    height: 2.5rem;
+
 }
 
-.closeinfo{
-    background-color:antiquewhite;
+.close {
+    border-color: darkgrey;
+    border-radius: 4px;
+    border-width: 0.2rem;
+    font-family: helvetica;
+    font-size: 1rem;
+    color: #000000;
+    padding: 0.5rem;
+    width: 6rem;
+    height: 2.5rem;
+    margin-left: 1rem;
 }
 
 .bloktwee {
@@ -70,7 +82,7 @@ button {
     opacity: 0;
     transition: opactiy 1s;
     background-color: lightgrey;
-   
+
 
 }
 
@@ -80,11 +92,10 @@ button {
     width: 3rem;
     padding: 0.5rem;
     border-radius: 50%;
-  
+
 }
 
 .active {
     visibility: visible;
     opacity: 1;
 }
-

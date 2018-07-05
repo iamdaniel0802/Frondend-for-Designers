@@ -67,50 +67,49 @@ var filmtitle = function (jsonObj) {
         }
 
 
-//button//
- var infobutton = document.createElement("button");
- if(infobutton.innerHTML === "Meer info"){
-     infobutton.innerHTML = "Close";
- }else{
-     infobutton.innerHTML = "Meer info";
- }
- infobutton.classList.add("meerinfo")
- blok.appendChild(infobutton);
+        //button//
+        var infobutton = document.createElement("button");
+        /* if (infobutton.innerHTML == "Meer info") {
+             infobutton.innerHTML = "Close";
+         } else {
+             infobutton.innerHTML = "Meer info";
+         }
+         */
+        infobutton.innerHTML = "Meer info";
+        infobutton.classList.add("meerinfo");
+
+        blok.appendChild(infobutton);
 
 
- infobutton.info = infoblok;
- infobutton.addEventListener("click", function () {
-     this.info.classList.toggle('active');
-
- });
-
-/* //button//
- var infobutton = document.createElement("button");
- infobutton.innerHTML = 'Meer info';
- infobutton.classList.add("meerinfo")
- blok.appendChild(infobutton);
+        infobutton.info = infoblok;
+        infobutton.addEventListener("click", function () {
+            this.info.classList.toggle('active');
 
 
- infobutton.info = infoblok;
- infobutton.addEventListener("click", function () {
-     this.info.classList.toggle('active');
+        });
 
- });*/
+        //button sluiten//
+        var sluitbutton = document.createElement("button");
+        /* if (infobutton.innerHTML == "Meer info") {
+             infobutton.innerHTML = "Close";
+         } else {
+             infobutton.innerHTML = "Meer info";
+         }
+         */
+        sluitbutton.innerHTML = "Sluiten";
+        sluitbutton.classList.add("close");
 
-/*//button close//
-   var closebutton = document.createElement("button");
-   infobutton.innerHTML = 'Close';
-   infobutton.classList.add("meerinfo")
-   blok.appendChild(closebutton);
+        blok.appendChild(sluitbutton);
 
 
-   closebutton.info = infoblok;
-   closebutton.addEventListener("click", function () {
-       this.info.classList.toggle('nonactive');
+        sluitbutton.info = infoblok;
+        sluitbutton.addEventListener("click", function () {
+            this.info.classList.toggle('active');
 
-   });*/
 
-}
+        });
+
+    }
 }
 
 
