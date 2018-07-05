@@ -79,19 +79,16 @@ var filmtitle = function (jsonObj) {
         infobutton.info = infoblok;
 
 
-        // Mouseover interaction
+        // mouse enter event//
         infobutton.addEventListener("mouseenter", function (event) {
-
             event.target.style.backgroundColor = "purple";
-
 
             setTimeout(function () {
                 event.target.style.backgroundColor = "";
             }, 500);
         }, false);
 
-
-        //click for pop-up//
+        //click event//
         infobutton.addEventListener("click", function () {
             console.log("click");
             this.info.classList.toggle('active');
