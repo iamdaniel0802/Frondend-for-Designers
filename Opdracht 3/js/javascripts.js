@@ -79,6 +79,7 @@ var filmtitle = function (jsonObj) {
         infobutton.info = infoblok;
 
 
+
         // mouse enter event//
         infobutton.addEventListener("mouseenter", function (event) {
             event.target.style.backgroundColor = "purple";
@@ -105,6 +106,16 @@ var filmtitle = function (jsonObj) {
                 this.innerHTML = "Meer info";
             }
 
+            //esc  key//
+
+            function a(event) {
+                if (event.keyCode == 27) {
+
+                    alert('Esc key pressed.');
+                    document.getElementsByClassName("bloktwee").style.display = "none";
+
+                }
+            }
         });
 
     }
